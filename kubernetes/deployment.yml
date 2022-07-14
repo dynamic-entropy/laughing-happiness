@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: fastapi-app
-          image: fastapi-demo:v1
+          image: rahuldocker25/fastapi-demo:v1
           ports:
             - containerPort: 5000
