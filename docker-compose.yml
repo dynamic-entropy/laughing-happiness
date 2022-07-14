@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fastapi-demo:v2
+    ports:
+      - "80:5000"
+    restart: always
+    networks:
+      - fastapi-net
+
+networks:
+  fastapi-net:
+
